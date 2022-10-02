@@ -1,2 +1,12 @@
 config:
-  aws:region: us-east-1
+  aws:profile: default
+  aws:region: us-west-1
+  cluster:name: cluster-test
+  elastic:containerPort: "8080"
+  elastic:envs:
+  - name: env1
+    value: value1
+  - name: env2
+    value: value2
+  elastic:hostPort: "8080"
+  elastic:image: registry
